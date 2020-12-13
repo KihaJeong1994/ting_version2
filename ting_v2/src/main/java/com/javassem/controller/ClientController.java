@@ -14,7 +14,7 @@ public class ClientController {
 	@Autowired
 	private ClientDetailInfoService clientDetailInfoService;
 	
-	@RequestMapping("/insertClientDetailInfo.do")
+	@RequestMapping("/insertClientDetailInfo")
 	public String insertClientDetailInfo(ClientDetailInfoVO vo) {
 		System.out.println("�씪�떒�떎�뻾�맂�떎移섏옄");
 		clientDetailInfoService.insertClientDetailInfo(vo);

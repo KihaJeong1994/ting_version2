@@ -225,6 +225,22 @@
 	   </div>
    </div>
    
+   <div class="row" style="display: none">
+		<div class="col-md-12 section-heading text-center">
+			<h2>Q13</h2>
+		</div>
+		<div class="col-md-05 section-heading text-center">
+			<h1>당신에 대해 자세히 알고 싶어요!</h1><br>
+			<h1>당신에 대해 구체적으로 말해주세요</h1>
+		</div>
+		<div class="options__ouvgd text-center">
+			<input type="textarea" class="ui inverted red selfIntro" style="width:400px; height: 200px; font-size:20px; margin-bottom: 50px;" value=""><br>
+			<button class="ui inverted red button selfIntroclick" style="width:100px; font-size:20px;">다음</button>
+		</div>
+	</div> 
+   
+
+   
    
 	   
    <div class="row" style="display: none">	
@@ -248,6 +264,7 @@
 			<input type="hidden" name="smoke" id="smoke" value="">
 			<input type="hidden" name="latitude" id="latitude" value="">
 			<input type="hidden" name="longitude" id="longitude" value="">
+			<input type="hidden" name="selfIntro" id="selfIntro" value="">
 			<button class="btn btn-primary" type="submit" >저장</button>
 	   </form>
 	   </div>
@@ -311,6 +328,9 @@
 	});
 	$('.smoke').click(function() {
 		$('#smoke').val($(this).val());
+	});
+	$('.selfIntroclick').click(function() {
+		$('#selfIntro').val($('.selfIntro').val());
 	});
 	
 	</script>
